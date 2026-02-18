@@ -21,3 +21,6 @@ int main(){
     good_evening();
     return 0;
 }
+
+// void is a function that does not return a value
+// it is used when we do not need to return any value from the function
