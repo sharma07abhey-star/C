@@ -1,35 +1,35 @@
 // count frequency of each element in array
+
 #include <stdio.h>
 
 int main(){
-    int arr[100], size, i, j, freq[100], count;
-    // input size of the array
-    printf("Enter the size of the array: ");
-    scanf("%d", &size);
-    // input elements of the array
-    printf("Enter the elements of the array: ");
-    for(i = 0; i < size; i++){
+    int arr[100],freq[1000];
+    int size , i , j ,count;
+    printf("enter size of array : ");
+    scanf("%d",&size);
+
+    printf("enter elements in array : ");
+    for (i = 0 ; i < size ; i++)
+    {
         scanf("%d", &arr[i]);
         freq[i] = -1;
     }
-    // count frequency of each element
-    for(i = 0; i < size; i++){
+    for (i = 0;i<size ; i++){
         count = 1;
-        for(j = i + 1; j < size; j++){
-            if(arr[i] == arr[j]){
-                count++;
-                freq[j] = 0;
+        for (j = i+1;j<size;j++){
+            if (arr[i]==arr[j]){
+                count ++;
+                freq [j] = 0;
             }
         }
-        if(freq[i] != 0){
-            freq[i] = count;
+        if (freq[i] != 0){
+            freq [i] = count ;
         }
     }
-    // print frequency of each element
-    printf("Frequency of each element in the array: \n");
-    for(i = 0; i < size; i++){
-        if(freq[i] != 0){
-            printf("%d occurs %d times\n", arr[i], freq[i]);
+    printf("frequency of all elements of array : \n");
+    for (i = 0;i<size;i++){
+        if (freq[i] != 0){
+            printf("%d occurs %d times \n",arr[i],freq[i]);
         }
     }
     return 0;
