@@ -3,7 +3,7 @@
 int main(){
     int a = 10 ; // integer 
     float b = 3.14 ; // float
-    char c = 'A' ; // char
+    char c = 'a' ; // char
 
     printf("the value of a is %d\n",a); 
     printf("the value of b is %f\n",b);
