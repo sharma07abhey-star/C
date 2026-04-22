@@ -22,3 +22,25 @@ int main(){
     
     return 0;
 }
+
+
+// // function to print hello and good bye
+// #include <stdio.h>
+
+// void printhello();
+// void printgoodbye();
+// int main(){
+//     printhello();
+//     printgoodbye();
+//     return 0;
+// }
+
+// void printhello(){
+//     printf("hello "
+//     );
+// }
+
+// void printgoodbye(){
+//     printf("goodbye !"
+//     );
+// }
